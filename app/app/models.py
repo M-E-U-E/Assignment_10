@@ -1,24 +1,52 @@
+# llmApp/models.py
 from django.db import models
 
-class Property(models.Model):
-    city_name = models.CharField(max_length=255)
-    property_name = models.CharField(max_length=255)
-    hotel_id = models.CharField(max_length=50, unique=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
-    rating = models.FloatField(null=True, blank=True)
-    address = models.TextField(null=True, blank=True)
-    latitude = models.FloatField(null=True, blank=True)
-    longitude = models.FloatField(null=True, blank=True)
-    room_type = models.CharField(max_length=255, null=True, blank=True)
-    image = models.URLField(null=True, blank=True)
-    image_path = models.CharField(max_length=500, null=True, blank=True)
+class Hotel(models.Model):
+    id = models.AutoField(primary_key=True)
+    city_name = models.CharField(max_length=100)
+    property_title = models.CharField(max_length=255)
+    hotel_id = models.CharField(max_length=50, unique=True)  # Added unique=True for referential integrity
+    price = models.FloatField()
+    rating = models.FloatField()
+    address = models.TextField()
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    room_type = models.CharField(max_length=100)
+    image = models.URLField()
+    local_image_path = models.CharField(max_length=255)
+    description = models.TextField(null=True, blank=True)
 
-    def __str__(self):
-        return f"{self.property_name} in {self.city_name}"
+    class Meta:
+        db_table = 'hotels'
+        managed = False
 
-class Summary(models.Model):
-    property = models.OneToOneField(Property, on_delete=models.CASCADE, related_name='summary')
-    description = models.TextField()
+class PropertySummary(models.Model):
+    property = models.ForeignKey(
+        'Hotel', 
+        to_field='hotel_id',  # Reference the hotel_id field
+        db_column='property_id',  # The column name in the database
+        on_delete=models.CASCADE, 
+        related_name='summaries'
+    )
+    summary = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return f"Summary for {self.property.property_name}"
+    class Meta:
+        db_table = 'property_summaries'
+
+class PropertyReview(models.Model):
+    property = models.ForeignKey(
+        'Hotel',
+        to_field='hotel_id',  # Reference the hotel_id field
+        db_column='property_id',  # The column name in the database
+        on_delete=models.CASCADE,
+        related_name='reviews'
+    )
+    rating = models.FloatField()
+    review = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        db_table = 'property_reviews'

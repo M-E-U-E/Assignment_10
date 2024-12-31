@@ -1,0 +1,122 @@
+[
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Jatra Flagship Rajshahi City Centre",
+        "hotel_id": 77118199,
+        "price": 35,
+        "rating": "5.0",
+        "address": "Boalia Thana",
+        "latitude": 24.37845,
+        "longitude": 88.622163,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0224c120009zuhvzmA17F_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Royal Raj Hotel",
+        "hotel_id": 109251728,
+        "price": 55,
+        "rating": "4.2",
+        "address": "",
+        "latitude": 24.37473,
+        "longitude": 88.60413,
+        "room_type": "Superior Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0226o120009xgwc5n9E00_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Hotel Star International",
+        "hotel_id": 12123747,
+        "price": 30,
+        "rating": "2.5",
+        "address": "Shah Makhdum Thana",
+        "latitude": 24.40699,
+        "longitude": 88.61379,
+        "room_type": "Deluxe Double Room With City View",
+        "image": "https://ak-d.tripcdn.com/images/0224i12000hctbgae9DBC_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Aronno Resort",
+        "hotel_id": 106080711,
+        "price": 49,
+        "rating": "",
+        "address": "Rajpara Thana",
+        "latitude": 24.368247,
+        "longitude": 88.57175,
+        "room_type": "Deluxe Room",
+        "image": "https://ak-d.tripcdn.com/images/0225712000asjqg8e0855_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Grand River View Hotel",
+        "hotel_id": 54296679,
+        "price": 58,
+        "rating": "3.5",
+        "address": "Boalia Thana",
+        "latitude": 24.368708,
+        "longitude": 88.579381,
+        "room_type": "Deluxe Double Room, 1 Queen Bed, City View",
+        "image": "https://ak-d.tripcdn.com/images/0585m12000bezgqhj6B20_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Hotel X Rajshahi",
+        "hotel_id": 106683945,
+        "price": 45,
+        "rating": "3.7",
+        "address": "Rajpara Thana",
+        "latitude": 24.37351,
+        "longitude": 88.57223,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0584512000di8r8z5A52E_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Jatra Flagship Rajshahi City Centre",
+        "hotel_id": 101240740,
+        "price": "",
+        "rating": "4.0",
+        "address": "Boalia Thana",
+        "latitude": 24.37841,
+        "longitude": 88.62221,
+        "room_type": "",
+        "image": "https://ak-d.tripcdn.com/images/0220w12000amuuc4u3AD7_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Asma-ul-Husna Apartment",
+        "hotel_id": 109898231,
+        "price": "",
+        "rating": "3.3",
+        "address": "Boalia Thana",
+        "latitude": 24.37163,
+        "longitude": 88.60798,
+        "room_type": "",
+        "image": "https://ak-d.tripcdn.com/images/0221012000bsjrcqeB5A4_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Hotel Green City International",
+        "hotel_id": 22150851,
+        "price": "",
+        "rating": "1.0",
+        "address": "Boalia Thana",
+        "latitude": 24.372329,
+        "longitude": 88.580401,
+        "room_type": "",
+        "image": "https://ak-d.tripcdn.com/images/02270120009u97b3138CC_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
+        "property_title": "Hotel Sukarna International",
+        "hotel_id": 114657265,
+        "price": "",
+        "rating": "",
+        "address": "Boalia Thana",
+        "latitude": 24.366526,
+        "longitude": 88.59829,
+        "room_type": "",
+        "image": "https://ak-d.tripcdn.com/images/0222a12000ccz9vb52C80_R_250_250_R5_D.jpg"
+    }
+]

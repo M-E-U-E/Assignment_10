@@ -6,3 +6,4 @@ sqlalchemy>=1.4
 requests>=2.26
 Scrapy
 sqlalchemy
+

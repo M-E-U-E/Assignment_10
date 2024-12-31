@@ -1,34 +1,21 @@
-# Use the official Python image as the base image
-FROM python:3.10-slim
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    libpq-dev \
-    curl \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
-
-# Install `wait-for-it` script
-RUN curl -o /usr/local/bin/wait-for-it https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh && \
-    chmod +x /usr/local/bin/wait-for-it
+FROM python:3.11-slim
 
 # Set environment variables
-ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
-# Set working directory
-WORKDIR /usr/src/app
+# Set the working directory inside the container
+WORKDIR /usr/src/scraper
 
-# Copy and install Python dependencies
-COPY requirements.txt .
+# Install system dependencies
+RUN apt-get update && apt-get install -y gcc libpq-dev && apt-get clean
+
+# Copy the requirements.txt to install dependencies
+COPY requirements.txt /usr/src/scraper/
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the Django app code
-COPY ./app /usr/src/app
+# Copy the entire Scrapy project into the container
+COPY ./scraper /usr/src/scraper/
 
-# Copy the Scrapy project code
-COPY ./scraper /usr/src/scraper
-
-# Expose Django port
-EXPOSE 8000
-
-# Run based on the service type
-CMD ["sh", "-c", "if [ \"$SERVICE\" = 'django' ]; then wait-for-it db:5432 -- python manage.py migrate && python manage.py runserver 0.0.0.0:8000; elif [ \"$SERVICE\" = 'scrapy' ]; then scrapy crawl async_trip; else echo 'Invalid service specified'; fi"]
+# Default command to run the Scrapy spider
+CMD ["scrapy", "crawl", "async_trip"]
