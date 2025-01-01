@@ -1,0 +1,122 @@
+[
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "Grand Sylhet Hotel & Resort",
+        "hotel_id": 91505210,
+        "price": 92,
+        "rating": "4.6",
+        "address": "Near Osmani International Airport",
+        "latitude": 24.954904,
+        "longitude": 91.861271,
+        "room_type": "Deluxe King Room",
+        "image": "https://ak-d.tripcdn.com/images/1mc1o12000ff6pazc1090_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "Hotel Star Pacific",
+        "hotel_id": 6345654,
+        "price": 40,
+        "rating": "4.0",
+        "address": "Sylhet",
+        "latitude": 24.88223,
+        "longitude": 91.867175,
+        "room_type": "Deluxe Double Room, 1 Double Bed, City View",
+        "image": "https://ak-d.tripcdn.com/images/22070g0000007ykhaD908_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "Grand Palace Hotel & Resorts Sylhet",
+        "hotel_id": 70474785,
+        "price": 62,
+        "rating": "4.1",
+        "address": "Sylhet",
+        "latitude": 24.894113,
+        "longitude": 91.865969,
+        "room_type": "Deluxe Twin Room",
+        "image": "https://ak-d.tripcdn.com/images/0584o12000dkhyls9466D_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "Hotel Noorjahan Grand",
+        "hotel_id": 8987238,
+        "price": 77,
+        "rating": "3.7",
+        "address": "Sylhet",
+        "latitude": 24.90198,
+        "longitude": 91.869697,
+        "room_type": "Family Room",
+        "image": "https://ak-d.tripcdn.com/images/0224d120009etrh54ED19_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "La Vista Hotel",
+        "hotel_id": 11496165,
+        "price": 26,
+        "rating": "4.0",
+        "address": "Sylhet",
+        "latitude": 24.89423,
+        "longitude": 91.86075,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0586l12000csbomz618CF_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "Nazimgarh Garden Resort",
+        "hotel_id": 50110844,
+        "price": 156,
+        "rating": "5.0",
+        "address": "",
+        "latitude": 24.91058,
+        "longitude": 91.94028,
+        "room_type": "Deluxe Double or Twin Room with Garden View",
+        "image": "https://ak-d.tripcdn.com/images/02265120009zut2cqA363_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "Hotel Valley Garden - Sylhet",
+        "hotel_id": 17502021,
+        "price": 95,
+        "rating": "3.5",
+        "address": "Sylhet",
+        "latitude": 24.890074,
+        "longitude": 91.878601,
+        "room_type": "Standard Double Room, 1 King Bed, Non Smoking, City View",
+        "image": "https://ak-d.tripcdn.com/images/0221512000amokucu9502_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "Novem Inn- Sylhet",
+        "hotel_id": 64190326,
+        "price": 25,
+        "rating": "",
+        "address": "Sylhet",
+        "latitude": 24.91345,
+        "longitude": 91.8729,
+        "room_type": "Deluxe Villa, 1 Queen Bed, Non Smoking",
+        "image": "https://ak-d.tripcdn.com/images/0584q12000cse4qvr0927_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "Asroy Guest House",
+        "hotel_id": 119247594,
+        "price": 22,
+        "rating": "",
+        "address": "Near Osmani International Airport",
+        "latitude": 24.94956,
+        "longitude": 91.86735,
+        "room_type": "Deluxe Room",
+        "image": "https://ak-d.tripcdn.com/images/0583312000du9wn5c63D4_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet Sadar Upazila",
+        "property_title": "Hotel Crystal Rose - Sylhet",
+        "hotel_id": 109593479,
+        "price": 44,
+        "rating": "3.9",
+        "address": "Sylhet",
+        "latitude": 24.905305,
+        "longitude": 91.872598,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0204c12000exqgo5b6F33_R_250_250_R5_D.jpg"
+    }
+]

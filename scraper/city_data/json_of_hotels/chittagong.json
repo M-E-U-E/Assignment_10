@@ -1,0 +1,122 @@
+[
+    {
+        "city_name": "Chittagong",
+        "property_title": "Radisson Blu Chattogram Bay View",
+        "hotel_id": 3725007,
+        "price": 145,
+        "rating": "4.4",
+        "address": "",
+        "latitude": 22.347525,
+        "longitude": 91.822981,
+        "room_type": "Guest Room",
+        "image": "https://ak-d.tripcdn.com/images/200213000000tqi0o7B89_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Chittagong",
+        "property_title": "The Peninsula Chittagong PLC.",
+        "hotel_id": 1625732,
+        "price": 64,
+        "rating": "4.5",
+        "address": "",
+        "latitude": 22.357735,
+        "longitude": 91.821829,
+        "room_type": "Super Deluxe Room",
+        "image": "https://ak-d.tripcdn.com/images/0584t12000d9yrxfxBEEA_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Chittagong",
+        "property_title": "Hotel Agrabad",
+        "hotel_id": 739586,
+        "price": 48,
+        "rating": "4.1",
+        "address": "",
+        "latitude": 22.326918,
+        "longitude": 91.816217,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0225t12000as4v8c143A9_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Chittagong",
+        "property_title": "Jatra Flagship Chattogram City Centre",
+        "hotel_id": 76477164,
+        "price": 30,
+        "rating": "4.1",
+        "address": "",
+        "latitude": 22.360135,
+        "longitude": 91.81454,
+        "room_type": "Deluxe Room",
+        "image": "https://ak-d.tripcdn.com/images/0225w120009zuhujaF6DA_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Chittagong",
+        "property_title": "Hotel Tower Inn",
+        "hotel_id": 3485851,
+        "price": 68,
+        "rating": "5.0",
+        "address": "",
+        "latitude": 22.338127,
+        "longitude": 91.830444,
+        "room_type": "Deluxe Twin Room, 1 Bedroom",
+        "image": "https://ak-d.tripcdn.com/images/0581912000fdh5q069F4F_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Chittagong",
+        "property_title": "Hotel Hoque Tower International",
+        "hotel_id": 100630358,
+        "price": 11,
+        "rating": "2.9",
+        "address": "",
+        "latitude": 22.33521,
+        "longitude": 91.81267,
+        "room_type": "Economy Twin Room",
+        "image": "https://ak-d.tripcdn.com/images/0584e12000eonlcbyB293_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Chittagong",
+        "property_title": "The Avenue Hotel & Suites",
+        "hotel_id": 9461168,
+        "price": 42,
+        "rating": "2.0",
+        "address": "",
+        "latitude": 22.347497,
+        "longitude": 91.819999,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0223v12000b5sl62nF355_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Chittagong",
+        "property_title": "Hotel Saint Martin Ltd.",
+        "hotel_id": 12300764,
+        "price": 43,
+        "rating": "5.0",
+        "address": "",
+        "latitude": 22.32645,
+        "longitude": 91.81268,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0227312000f59ugsq0991_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Chittagong",
+        "property_title": "Ambassador Residency",
+        "hotel_id": 7141139,
+        "price": 30,
+        "rating": "3.9",
+        "address": "",
+        "latitude": 22.359689,
+        "longitude": 91.822548,
+        "room_type": "Prestige Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0223012000g956ug20FE9_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Chittagong",
+        "property_title": "Orchid Business Hotel",
+        "hotel_id": 739590,
+        "price": 28,
+        "rating": "3.0",
+        "address": "",
+        "latitude": 22.330658,
+        "longitude": 91.81214,
+        "room_type": "Executive Double Or Twin Room",
+        "image": "https://ak-d.tripcdn.com/images/200414000000vx06x9EE7_R_250_250_R5_D.jpg"
+    }
+]

@@ -9,21 +9,19 @@
         "latitude": 20.634353,
         "longitude": 92.321607,
         "room_type": "Deluxe Room",
-        "image": "https://ak-d.tripcdn.com/images/0225012000aqxtdusD10D_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/105555977_Dreamers_Paradise.jpg"
+        "image": "https://ak-d.tripcdn.com/images/0225012000aqxtdusD10D_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Teknaf Upazila",
         "property_title": "Sunset Serenity",
         "hotel_id": 23185261,
-        "price": 111,
+        "price": 112,
         "rating": "5.0",
         "address": "",
         "latitude": 20.612644,
         "longitude": 92.326012,
         "room_type": "Standard Twin Room",
-        "image": "https://ak-d.tripcdn.com/images/0222e12000ammig2kC419_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/23185261_Sunset_Serenity.jpg"
+        "image": "https://ak-d.tripcdn.com/images/0222e12000ammig2kC419_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Teknaf Upazila",
@@ -35,34 +33,31 @@
         "latitude": 20.630148,
         "longitude": 92.316069,
         "room_type": "Deluxe Room",
-        "image": "https://ak-d.tripcdn.com/images/0224k12000gom8nwx3027_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/124031100_Family_Time_Beach_Resort.jpg"
+        "image": "https://ak-d.tripcdn.com/images/0224k12000gom8nwx3027_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Teknaf Upazila",
         "property_title": "Blue Rain Resort",
         "hotel_id": 124014639,
-        "price": 45,
+        "price": 46,
         "rating": "",
         "address": "",
         "latitude": 20.631483,
         "longitude": 92.325927,
         "room_type": "Deluxe Room With Sea View",
-        "image": "https://ak-d.tripcdn.com/images/0225j12000gbjpytr79FD_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/124014639_Blue_Rain_Resort.jpg"
+        "image": "https://ak-d.tripcdn.com/images/0225j12000gbjpytr79FD_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Teknaf Upazila",
         "property_title": "Sand Castle Beach Resort Saint Martin",
         "hotel_id": 123819976,
-        "price": 77,
+        "price": 78,
         "rating": "",
         "address": "",
         "latitude": 20.615049,
         "longitude": 92.325595,
         "room_type": "Luxury Suite With Garden View",
-        "image": "https://ak-d.tripcdn.com/images/0222a12000gmnavjfB190_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/123819976_Sand_Castle_Beach_Resort_Saint_Martin.jpg"
+        "image": "https://ak-d.tripcdn.com/images/0222a12000gmnavjfB190_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Teknaf Upazila",
@@ -74,8 +69,7 @@
         "latitude": 20.63073,
         "longitude": 92.31806,
         "room_type": "",
-        "image": "https://ak-d.tripcdn.com/images/1mc7012000d8vx67i1959_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/117062946_Surjasto_Resort.jpg"
+        "image": "https://ak-d.tripcdn.com/images/1mc7012000d8vx67i1959_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Teknaf Upazila",
@@ -87,8 +81,7 @@
         "latitude": 20.621372,
         "longitude": 92.32321,
         "room_type": "",
-        "image": "https://ak-d.tripcdn.com/images/0224t12000aly2ciq7C87_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/110935996_Josnaloy_Beach_Resort_Saintmartin.jpg"
+        "image": "https://ak-d.tripcdn.com/images/0224t12000aly2ciq7C87_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Teknaf Upazila",
@@ -100,8 +93,7 @@
         "latitude": 20.8482,
         "longitude": 92.273,
         "room_type": "",
-        "image": "https://images3.c-ctrip.com/hotel_online_images/bff/nophoto.png",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/13675549_Central_Resort_Ltd..jpg"
+        "image": "https://images3.c-ctrip.com/hotel_online_images/bff/nophoto.png"
     },
     {
         "city_name": "Teknaf Upazila",
@@ -113,8 +105,7 @@
         "latitude": 20.62467,
         "longitude": 92.32124,
         "room_type": "",
-        "image": "https://images3.c-ctrip.com/hotel_online_images/bff/nophoto.png",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/12490065_Neel_Digante_Resort.jpg"
+        "image": "https://images3.c-ctrip.com/hotel_online_images/bff/nophoto.png"
     },
     {
         "city_name": "Teknaf Upazila",
@@ -126,7 +117,6 @@
         "latitude": 20.866095,
         "longitude": 92.298197,
         "room_type": "",
-        "image": "https://ak-d.tripcdn.com/images/0220s12000ab512cn86CD_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/teknaf_upazila/10879849_Milky_Resort.jpg"
+        "image": "https://ak-d.tripcdn.com/images/0220s12000ab512cn86CD_R_250_250_R5_D.jpg"
     }
 ]

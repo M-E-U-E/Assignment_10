@@ -1,0 +1,122 @@
+[
+    {
+        "city_name": "Sylhet",
+        "property_title": "Hotel Noorjahan Grand",
+        "hotel_id": 8987238,
+        "price": 77,
+        "rating": "3.7",
+        "address": "",
+        "latitude": 24.90198,
+        "longitude": 91.869697,
+        "room_type": "Family Room",
+        "image": "https://ak-d.tripcdn.com/images/0224d120009etrh54ED19_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet",
+        "property_title": "Hotel Star Pacific",
+        "hotel_id": 6345654,
+        "price": 40,
+        "rating": "4.0",
+        "address": "",
+        "latitude": 24.88223,
+        "longitude": 91.867175,
+        "room_type": "Deluxe Double Room, 1 Double Bed, City View",
+        "image": "https://ak-d.tripcdn.com/images/22070g0000007ykhaD908_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet",
+        "property_title": "Grand Palace Hotel & Resorts Sylhet",
+        "hotel_id": 70474785,
+        "price": 62,
+        "rating": "4.1",
+        "address": "",
+        "latitude": 24.894113,
+        "longitude": 91.865969,
+        "room_type": "Deluxe Twin Room",
+        "image": "https://ak-d.tripcdn.com/images/0584o12000dkhyls9466D_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet",
+        "property_title": "La Vista Hotel",
+        "hotel_id": 11496165,
+        "price": 26,
+        "rating": "4.0",
+        "address": "",
+        "latitude": 24.89423,
+        "longitude": 91.86075,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0586l12000csbomz618CF_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet",
+        "property_title": "Hotel Valley Garden - Sylhet",
+        "hotel_id": 17502021,
+        "price": 95,
+        "rating": "3.5",
+        "address": "",
+        "latitude": 24.890074,
+        "longitude": 91.878601,
+        "room_type": "Standard Double Room, 1 King Bed, Non Smoking, City View",
+        "image": "https://ak-d.tripcdn.com/images/0221512000amokucu9502_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet",
+        "property_title": "Novem Inn- Sylhet",
+        "hotel_id": 64190326,
+        "price": 25,
+        "rating": "",
+        "address": "",
+        "latitude": 24.91345,
+        "longitude": 91.8729,
+        "room_type": "Deluxe Villa, 1 Queen Bed, Non Smoking",
+        "image": "https://ak-d.tripcdn.com/images/0584q12000cse4qvr0927_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet",
+        "property_title": "Asroy Guest House",
+        "hotel_id": 119247594,
+        "price": 22,
+        "rating": "",
+        "address": "Near Osmani International Airport, Sylhet Sadar Upazila",
+        "latitude": 24.94956,
+        "longitude": 91.86735,
+        "room_type": "Deluxe Room",
+        "image": "https://ak-d.tripcdn.com/images/0583312000du9wn5c63D4_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet",
+        "property_title": "Hotel Mira Garden",
+        "hotel_id": 47061944,
+        "price": 32,
+        "rating": "3.8",
+        "address": "",
+        "latitude": 24.89485,
+        "longitude": 91.87979,
+        "room_type": "Standard Double Room with City View",
+        "image": "https://ak-d.tripcdn.com/images/0581712000dofcpzv192E_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet",
+        "property_title": "Hotel Crystal Rose - Sylhet",
+        "hotel_id": 109593479,
+        "price": 44,
+        "rating": "3.9",
+        "address": "",
+        "latitude": 24.905305,
+        "longitude": 91.872598,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0204c12000exqgo5b6F33_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Sylhet",
+        "property_title": "Hotel Relax Inn",
+        "hotel_id": 105448171,
+        "price": 18,
+        "rating": "5.0",
+        "address": "",
+        "latitude": 24.89373,
+        "longitude": 91.87319,
+        "room_type": "Comfort Room",
+        "image": "https://ak-d.tripcdn.com/images/0226u12000ark9vup26D5_R_250_250_R5_D.jpg"
+    }
+]

@@ -1,18 +1,6 @@
 [
     {
         "city_name": "Rajshahi",
-        "property_title": "Jatra Flagship Rajshahi City Centre",
-        "hotel_id": 77118199,
-        "price": 35,
-        "rating": "5.0",
-        "address": "Boalia Thana",
-        "latitude": 24.37845,
-        "longitude": 88.622163,
-        "room_type": "Deluxe Double Room",
-        "image": "https://ak-d.tripcdn.com/images/0224c120009zuhvzmA17F_R_250_250_R5_D.jpg"
-    },
-    {
-        "city_name": "Rajshahi",
         "property_title": "Royal Raj Hotel",
         "hotel_id": 109251728,
         "price": 55,
@@ -49,26 +37,26 @@
     },
     {
         "city_name": "Rajshahi",
-        "property_title": "Grand River View Hotel",
-        "hotel_id": 54296679,
-        "price": 58,
-        "rating": "3.5",
+        "property_title": "Jatra Flagship Rajshahi City Centre",
+        "hotel_id": 77118199,
+        "price": "",
+        "rating": "5.0",
         "address": "Boalia Thana",
-        "latitude": 24.368708,
-        "longitude": 88.579381,
-        "room_type": "Deluxe Double Room, 1 Queen Bed, City View",
-        "image": "https://ak-d.tripcdn.com/images/0585m12000bezgqhj6B20_R_250_250_R5_D.jpg"
+        "latitude": 24.37845,
+        "longitude": 88.622163,
+        "room_type": "",
+        "image": "https://ak-d.tripcdn.com/images/0224c120009zuhvzmA17F_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Rajshahi",
         "property_title": "Hotel X Rajshahi",
         "hotel_id": 106683945,
-        "price": 45,
+        "price": "",
         "rating": "3.7",
         "address": "Rajpara Thana",
         "latitude": 24.37351,
         "longitude": 88.57223,
-        "room_type": "Deluxe Double Room",
+        "room_type": "",
         "image": "https://ak-d.tripcdn.com/images/0584512000di8r8z5A52E_R_250_250_R5_D.jpg"
     },
     {
@@ -85,6 +73,18 @@
     },
     {
         "city_name": "Rajshahi",
+        "property_title": "Grand River View Hotel",
+        "hotel_id": 54296679,
+        "price": 59,
+        "rating": "3.5",
+        "address": "Boalia Thana",
+        "latitude": 24.368708,
+        "longitude": 88.579381,
+        "room_type": "Deluxe Double Room, 1 Queen Bed, City View",
+        "image": "https://ak-d.tripcdn.com/images/0585m12000bezgqhj6B20_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
         "property_title": "Asma-ul-Husna Apartment",
         "hotel_id": 109898231,
         "price": "",
@@ -97,6 +97,18 @@
     },
     {
         "city_name": "Rajshahi",
+        "property_title": "My Test Home",
+        "hotel_id": 99282354,
+        "price": "",
+        "rating": "",
+        "address": "Boalia Thana",
+        "latitude": 24.379244,
+        "longitude": 88.598145,
+        "room_type": "",
+        "image": "https://ak-d.tripcdn.com/images/0224e120009zusmpm307B_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Rajshahi",
         "property_title": "Hotel Green City International",
         "hotel_id": 22150851,
         "price": "",
@@ -106,17 +118,5 @@
         "longitude": 88.580401,
         "room_type": "",
         "image": "https://ak-d.tripcdn.com/images/02270120009u97b3138CC_R_250_250_R5_D.jpg"
-    },
-    {
-        "city_name": "Rajshahi",
-        "property_title": "Hotel Sukarna International",
-        "hotel_id": 114657265,
-        "price": "",
-        "rating": "",
-        "address": "Boalia Thana",
-        "latitude": 24.366526,
-        "longitude": 88.59829,
-        "room_type": "",
-        "image": "https://ak-d.tripcdn.com/images/0222a12000ccz9vb52C80_R_250_250_R5_D.jpg"
     }
 ]

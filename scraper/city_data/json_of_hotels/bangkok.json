@@ -1,0 +1,122 @@
+[
+    {
+        "city_name": "Bangkok",
+        "property_title": "B Your Home Hotel Donmueang Airport Bangkok",
+        "hotel_id": 11491476,
+        "price": 21,
+        "rating": "4.1",
+        "address": "Near Don Mueang International Airport|Don Mueang Airport/IMPACT convention",
+        "latitude": 13.926515,
+        "longitude": 100.595824,
+        "room_type": "Standard Room",
+        "image": "https://ak-d.tripcdn.com/images/220d0u000000jauyd339F_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Bangkok",
+        "property_title": "Sinsuvarn Airport Suite Hotel",
+        "hotel_id": 702691,
+        "price": 36,
+        "rating": "4.0",
+        "address": "Near Paradee Thai Massage|Suvarnabhumi Airport",
+        "latitude": 13.720602,
+        "longitude": 100.737283,
+        "room_type": "Deluxe Balcony Room",
+        "image": "https://ak-d.tripcdn.com/images/0221t1200082kpsa883F8_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Bangkok",
+        "property_title": "Amari Don Muang Airport Bangkok",
+        "hotel_id": 983946,
+        "price": 66,
+        "rating": "4.3",
+        "address": "Near Don Mueang International Airport|Don Mueang Airport/IMPACT convention",
+        "latitude": 13.920684,
+        "longitude": 100.600633,
+        "room_type": "Deluxe Room",
+        "image": "https://ak-d.tripcdn.com/images/200o1g000001gz8ch07FF_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Bangkok",
+        "property_title": "Asawin Grand Convention Hotel",
+        "hotel_id": 35589169,
+        "price": 44,
+        "rating": "4.6",
+        "address": "Near Ratthaprasasanabhakti Building (Building B)|Don Mueang Airport/IMPACT convention",
+        "latitude": 13.874169,
+        "longitude": 100.574866,
+        "room_type": "Premier Twin Room",
+        "image": "https://ak-d.tripcdn.com/images/0583112000d557pks4AF7_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Bangkok",
+        "property_title": "Miracle Grand Convention Hotel",
+        "hotel_id": 924201,
+        "price": 43,
+        "rating": "4.4",
+        "address": "Near Ratthaprasasanabhakti Building (Building B)|Don Mueang Airport/IMPACT convention",
+        "latitude": 13.876461,
+        "longitude": 100.575823,
+        "room_type": "Deluxe Double Room",
+        "image": "https://ak-d.tripcdn.com/images/1mc4412000cmoulcrFC93_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Bangkok",
+        "property_title": "Cinnamon Hotel Bangkok",
+        "hotel_id": 701174,
+        "price": 22,
+        "rating": "4.2",
+        "address": "Near Pantip Plaza Ngamwongwan|Chatuchak Weekend Market",
+        "latitude": 13.840906,
+        "longitude": 100.562262,
+        "room_type": "Deluxe Twin Room",
+        "image": "https://ak-d.tripcdn.com/images/1mc3x12000dljv76x0255_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Bangkok",
+        "property_title": "Centre Point Pratunam",
+        "hotel_id": 701060,
+        "price": 171,
+        "rating": "4.4",
+        "address": "Near Erawan Shrine|Pratunam Market",
+        "latitude": 13.75204,
+        "longitude": 100.537023,
+        "room_type": "Grand Deluxe double Room",
+        "image": "https://ak-d.tripcdn.com/images/1mc6w12000brhr239AF4A_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Bangkok",
+        "property_title": "14 Sathorn Hotel No-Parking",
+        "hotel_id": 111799374,
+        "price": 24,
+        "rating": "4.4",
+        "address": "Near Wongwian Yai Metro Station",
+        "latitude": 13.72019,
+        "longitude": 100.49642,
+        "room_type": "Standard Room",
+        "image": "https://ak-d.tripcdn.com/images/0221t12000dlu47itE6C3_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Bangkok",
+        "property_title": "Four Points by Sheraton Ploenchit, Bangkok",
+        "hotel_id": 1378559,
+        "price": 158,
+        "rating": "4.4",
+        "address": "Near Erawan Shrine|Chidlom",
+        "latitude": 13.742543,
+        "longitude": 100.549567,
+        "room_type": "Superior Twin Room",
+        "image": "https://ak-d.tripcdn.com/images/1mc4j12000grd0nm4C2A3_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Bangkok",
+        "property_title": "The Ex Capital Hotel",
+        "hotel_id": 31600558,
+        "price": 39,
+        "rating": "4.0",
+        "address": "Near ICONSIAM",
+        "latitude": 13.717207,
+        "longitude": 100.500067,
+        "room_type": "Superior Double Room",
+        "image": "https://ak-d.tripcdn.com/images/0224v12000ae1mnl1BFE7_R_250_250_R5_D.jpg"
+    }
+]

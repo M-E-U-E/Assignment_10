@@ -1,6 +1,30 @@
 [
     {
         "city_name": "Beijing",
+        "property_title": "VOYAGE INTERNATIONAL HOTEL",
+        "hotel_id": 80920781,
+        "price": 40,
+        "rating": "4.9",
+        "address": "Near Beijing Capital International Airport|Capital Airport and New International Exhibition Center",
+        "latitude": 40.06121882066725,
+        "longitude": 116.58017738054029,
+        "room_type": "Delightful Twin Room",
+        "image": "https://ak-d.tripcdn.com/images/0201f120008zf5bf9958C_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Beijing",
+        "property_title": "Yitingzhenshe Hotel (Beijing Qianmen)",
+        "hotel_id": 8986081,
+        "price": 37,
+        "rating": "4.6",
+        "address": "Near Tiananmen Square|Qianmen, The Temple Of Heaven and Chongwenmen",
+        "latitude": 39.893188804209196,
+        "longitude": 116.39254103364087,
+        "room_type": "Special Room",
+        "image": "https://ak-d.tripcdn.com/images/0205i120008hhpl4bC66E_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Beijing",
         "property_title": "Aerotel Beijing",
         "hotel_id": 48564523,
         "price": 44,
@@ -9,21 +33,7 @@
         "latitude": 39.51266027729959,
         "longitude": 116.41447711473769,
         "room_type": "Superior Double Room （Without Window)",
-        "image": "https://ak-d.tripcdn.com/images/200i1b000001atzgvED54_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/48564523_Aerotel_Beijing.jpg"
-    },
-    {
-        "city_name": "Beijing",
-        "property_title": "VOYAGE INTERNATIONAL HOTEL",
-        "hotel_id": 80920781,
-        "price": 47,
-        "rating": "4.9",
-        "address": "Near Beijing Capital International Airport|Capital Airport and New International Exhibition Center",
-        "latitude": 40.06121882066725,
-        "longitude": 116.58017738054029,
-        "room_type": "Delightful Twin Room",
-        "image": "https://ak-d.tripcdn.com/images/0201f120008zf5bf9958C_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/80920781_VOYAGE_INTERNATIONAL_HOTEL.jpg"
+        "image": "https://ak-d.tripcdn.com/images/200i1b000001atzgvED54_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Beijing",
@@ -35,47 +45,91 @@
         "latitude": 39.55077678810106,
         "longitude": 116.3577186027618,
         "room_type": "Budget Twin Room (Without window)",
-        "image": "https://ak-d.tripcdn.com/images/1mc3r12000dl7tbz235D1_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/70890244_Quanzhongquan_Hotel_(Beijing_Daxing_International_Airport).jpg"
+        "image": "https://ak-d.tripcdn.com/images/1mc3r12000dl7tbz235D1_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Beijing",
-        "property_title": "UrCove by HYATT Beijing Forbidden City",
-        "hotel_id": 436887,
-        "price": 65,
+        "property_title": "CitiGO Hotel Sanyuanqiao Beijing",
+        "hotel_id": 608516,
+        "price": 47,
+        "rating": "4.8",
+        "address": "Near Sanyuanqiao Metro Station|China International Exhibition Center Area",
+        "latitude": 39.95989778949662,
+        "longitude": 116.44867953255331,
+        "room_type": "Huange Double Bed Room",
+        "image": "https://ak-d.tripcdn.com/images/1mc3y12000c2ukniw8AAB_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Beijing",
+        "property_title": "Pullman Beijing South",
+        "hotel_id": 430008,
+        "price": 47,
         "rating": "4.5",
-        "address": "Near Tiananmen Square|Tian'anmen Square and Wangfujing Area",
-        "latitude": 39.90890033019606,
-        "longitude": 116.40086586830249,
-        "room_type": "Smart Enjoyment Fresh Double Bed Room (Lai Fen Hair Dryer + Neck-Protection Pillow + Fridge + Coffee Machine + Smart Voice Control)",
-        "image": "https://ak-d.tripcdn.com/images/1mc6512000dctj681ECC2_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/436887_UrCove_by_HYATT_Beijing_Forbidden_City.jpg"
+        "address": "Near Dazu Square|Yizhuang Area",
+        "latitude": 39.785613990865194,
+        "longitude": 116.50927864665606,
+        "room_type": "Superior Room",
+        "image": "https://ak-d.tripcdn.com/images/0201m120001ejtqaf0E0F_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Beijing",
         "property_title": "Radisson Hotel Beijing Daxing Airport",
         "hotel_id": 113612942,
-        "price": 50,
+        "price": 48,
         "rating": "4.8",
         "address": "Near Beijing Daxing International Airport|Daxing Airpot",
         "latitude": 39.52426889857365,
         "longitude": 116.40675156192997,
         "room_type": "Superior Room",
-        "image": "https://ak-d.tripcdn.com/images/1mc1i12000ditqhi66979_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/113612942_Radisson_Hotel_Beijing_Daxing_Airport.jpg"
+        "image": "https://ak-d.tripcdn.com/images/1mc1i12000ditqhi66979_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Beijing",
-        "property_title": "Renaissance Beijing Wangfujing Hotel",
-        "hotel_id": 1171705,
-        "price": 130,
-        "rating": "4.8",
-        "address": "Near The Palace Museum|Tian'anmen Square and Wangfujing Area",
-        "latitude": 39.91987551176483,
-        "longitude": 116.40397087441958,
-        "room_type": "Deluxe King room",
-        "image": "https://ak-d.tripcdn.com/images/200v14000000w7mnt5A2C_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/1171705_Renaissance_Beijing_Wangfujing_Hotel.jpg"
+        "property_title": "Beijing Xinqiao Hotel",
+        "hotel_id": 374787,
+        "price": 56,
+        "rating": "4.5",
+        "address": "Near Tiananmen Square|Tian'anmen Square and Wangfujing Area",
+        "latitude": 39.900285762865344,
+        "longitude": 116.41064368161136,
+        "room_type": "Economy Room with Twin Beds (No Window)",
+        "image": "https://ak-d.tripcdn.com/images/0200y120009lnkjx155A0_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Beijing",
+        "property_title": "Jingli Hongyizhan Hotel (Beijing Dongzhimen Sanlitun Branch)",
+        "hotel_id": 1013461,
+        "price": 31,
+        "rating": "4.6",
+        "address": "Near Beijing Workers' Gymnasium|East Second Ring Workers' Stadium Area",
+        "latitude": 39.937572759715124,
+        "longitude": 116.43865596824672,
+        "room_type": "Tatami Mini Room",
+        "image": "https://ak-d.tripcdn.com/images/200m180000014r8dpC624_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Beijing",
+        "property_title": "UrCove by HYATT Beijing Forbidden City",
+        "hotel_id": 436887,
+        "price": 68,
+        "rating": "4.5",
+        "address": "Near Tiananmen Square|Tian'anmen Square and Wangfujing Area",
+        "latitude": 39.90890033019606,
+        "longitude": 116.40086586830249,
+        "room_type": "Superior Queen Room",
+        "image": "https://ak-d.tripcdn.com/images/1mc6512000dctj681ECC2_R_250_250_R5_D.jpg"
+    },
+    {
+        "city_name": "Beijing",
+        "property_title": "Swissôtel Beijing Hong Kong Macau Center",
+        "hotel_id": 375507,
+        "price": 108,
+        "rating": "4.7",
+        "address": "Near Beijing Workers' Gymnasium|East Second Ring Workers' Stadium Area",
+        "latitude": 39.931723872965904,
+        "longitude": 116.43005472516343,
+        "room_type": "Premier Room",
+        "image": "https://ak-d.tripcdn.com/images/1mc0k12000c2ze2sg3A3A_R_250_250_R5_D.jpg"
     },
     {
         "city_name": "Beijing",
@@ -87,72 +141,6 @@
         "latitude": 39.91634387789027,
         "longitude": 116.40600476352665,
         "room_type": "Standard 2-bed Room",
-        "image": "https://ak-d.tripcdn.com/images/1mc2812000e3ifnskBC0F_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/419461_Sunworld_Dynasty_Hotel_Beijing.jpg"
-    },
-    {
-        "city_name": "Beijing",
-        "property_title": "Beijing Xinqiao Hotel",
-        "hotel_id": 374787,
-        "price": 55,
-        "rating": "4.5",
-        "address": "Near Tiananmen Square|Tian'anmen Square and Wangfujing Area",
-        "latitude": 39.900285762865344,
-        "longitude": 116.41064368161136,
-        "room_type": "Economy Room with Twin Beds (No Window)",
-        "image": "https://ak-d.tripcdn.com/images/0200y120009lnkjx155A0_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/374787_Beijing_Xinqiao_Hotel.jpg"
-    },
-    {
-        "city_name": "Beijing",
-        "property_title": "CitiGO Hotel Sanyuanqiao Beijing",
-        "hotel_id": 608516,
-        "price": 52,
-        "rating": "4.8",
-        "address": "Near Sanyuanqiao Metro Station|China International Exhibition Center Area",
-        "latitude": 39.95989778949662,
-        "longitude": 116.44867953255331,
-        "room_type": "Huanyi Double Bed Room",
-        "image": "https://ak-d.tripcdn.com/images/1mc3y12000c2ukniw8AAB_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/608516_CitiGO_Hotel_Sanyuanqiao_Beijing.jpg"
-    },
-    {
-        "city_name": "Beijing",
-        "property_title": "The Universal Studios Grand Hotel",
-        "hotel_id": 72316955,
-        "price": 208,
-        "rating": "4.7",
-        "address": "Near Universal Beijing Resort|Universal Beijing Resort and Sorrounding",
-        "latitude": 39.85253466332298,
-        "longitude": 116.67396935472966,
-        "room_type": "Deluxe Double Queen Room",
-        "image": "https://ak-d.tripcdn.com/images/0223j12000at3raiy727F_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/72316955_The_Universal_Studios_Grand_Hotel.jpg"
-    },
-    {
-        "city_name": "Beijing",
-        "property_title": "Beijing LanWan International Hotel (Capital Airport Xinguozhan Branch)",
-        "hotel_id": 6473120,
-        "price": 22,
-        "rating": "4.8",
-        "address": "Near Beijing Capital International Airport|Capital Airport and New International Exhibition Center",
-        "latitude": 40.06179051265551,
-        "longitude": 116.56608529858782,
-        "room_type": "Zhixiang Twin Room With Laundry, Gym & Quiet Reading Space",
-        "image": "https://ak-d.tripcdn.com/images/1mc0412000b9o8aqk430D_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/6473120_Beijing_LanWan_International_Hotel_(Capital_Airport_Xinguozhan_Branch).jpg"
-    },
-    {
-        "city_name": "Beijing",
-        "property_title": "Huayi Collection Hotel (Beijing Xinguozhan Capital Airport)",
-        "hotel_id": 9116792,
-        "price": 17,
-        "rating": "4.5",
-        "address": "Near Beijing Capital International Airport|Capital Airport and New International Exhibition Center",
-        "latitude": 40.06110230783806,
-        "longitude": 116.57951685982341,
-        "room_type": "Boutique 2-bed Room",
-        "image": "https://ak-d.tripcdn.com/images/200t1d000001ebuijB988_R_250_250_R5_D.jpg",
-        "image_path": "/usr/src/scraper/city_data/images_of_hotels/beijing/9116792_Huayi_Collection_Hotel_(Beijing_Xinguozhan_Capital_Airport).jpg"
+        "image": "https://ak-d.tripcdn.com/images/1mc2812000e3ifnskBC0F_R_250_250_R5_D.jpg"
     }
 ]
