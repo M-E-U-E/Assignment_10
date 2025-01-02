@@ -88,7 +88,14 @@ To clone this project to your local machine, follow these steps:
 
 
 ## Django CLI Commands
-Scrape and rewrite all data:
+**Rewrite Hotel Title and Add a Description for the hotel:**
+```
+python manage.py rewrite_hotel_data
+```
+Generate Summaries and Rating for hotel:
+```
+python manage.py generate_summaries_and_ratings
+```
 
 ## Test
   Run the testing file:
