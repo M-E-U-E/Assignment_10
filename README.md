@@ -55,20 +55,40 @@ To clone this project to your local machine, follow these steps:
     docker-compose up --build
     ```
     After set up the docker
-    Go to new terminal the run this code to open psql db
+    **Run migrations to set up the database schema:**
     ```
-    docker exec -it assignment_8-db-1 psql -U username -d hotel_db
+    docker-compose exec -it django_app python manage.py makemigrations
+    docker-compose exec -it django_app python manage.py migrate
     ```
+    **To see the django application and django admin:**
+    ```
+    create superuser: docker-compose exec -it django_app python manage.py createsuperuser
+    http://localhost:8000/admin/
+    ```
+4. **Database Management**
+    Access the database:
+
+    ```
+    docker exec -it postgres_db psql -U username -d hotel_db
+    ```
+    View database tables:
     ```
     \dt [list of the tables]
+    ```
+    Query specific tables:
+   ```
     SELECT * FROM hotels; [see all hotels]
     SELECT * FROM hotels LIMIT 10; [only show 10 hotels]
+    SELECT * FROM llm_commands_propertyrating;
+    SELECT * FROM llm_commands_summary;
     \q for exit
-
+   ```
 
    
 
 
+## Django CLI Commands
+Scrape and rewrite all data:
 
 ## Test
   Run the testing file:
