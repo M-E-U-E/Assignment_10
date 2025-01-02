@@ -4,13 +4,15 @@
 ## Table of Contents
 - [Description](#description)
 - [Git Clone Instructions](#git-clone-instructions)
+- [Database Management](#database_management)
+- [Django CLI Commands](#django_cli_commands)
 - [Test](#test)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Code Coverage](#code_coverage)
 - [Code Coverage Report](#code_coverage_report)
 - [Dependencies](#dependencies)
-- [Remember](#remember)
+
 
 
 ## Description
@@ -65,7 +67,7 @@ To clone this project to your local machine, follow these steps:
     create superuser: docker-compose exec -it django_app python manage.py createsuperuser
     http://localhost:8000/admin/
     ```
-4. **Database Management**
+## Database Management
     Access the database:
 
     ```
@@ -164,55 +166,19 @@ Assignment_8/
 ## Technologies Used
 
 - Python: Programming language
-- Scrapy: Web scraping framework
-- PostgreSQL: Database to store hotel data
+- Django: Web framework for the CLI application
+- PostgreSQL: Database to store property data, summaries, ratings, and reviews
 - SQLAlchemy: ORM for database interaction
+- Django ORM: ORM for database interaction
+- Gemini API: API for rewriting and enhancing property data
+- Docker: Containerization for environment consistency
 - pytest: Testing framework
 
-  
-## Code Coverage  
-      Coverage report: 66%
-      - Files
-        - trip/spiders/async_trip_spider.py
-        - tests/test_async_trip_spider.py
-        - trip/items.py
-        - trip/middlewares.py
-        - trip/pipelines.py
-        - trip/settings.py
-        - trip/db/database.py
-        - trip/db/models.py
 
-## Code Coverage Report
-```
-| **File**                                | **Statements** | **Missing** | **Coverage** | **Missing Lines**                          |
-|-----------------------------------------|---------------:|------------:|-------------:|-------------------------------------------|
-| `trip/__init__.py`                      | 0             | 0          | 100%         | -                                         |
-| `trip/db/__init__.py`                   | 0             | 0          | 100%         | -                                         |
-| `trip/db/database.py`                   | 10            | 0          | 100%         | -                                         |
-| `trip/db/models.py`                     | 17            | 0          | 100%         | -                                         |
-| `trip/items.py`                         | 16            | 0          | 100%         | -                                         |
-| `trip/middlewares.py`                   | 0             | 0          | 100%         | -                                         |
-| `trip/pipelines.py`                     | 38            | 22         | 42%          | 52-55, 59-62, 72-73, 78-79, 82-104         |
-| `trip/settings.py`                      | 10            | 0          | 100%         | -                                         |
-| `trip/spiders/__init__.py`              | 0             | 0          | 100%         | -                                         |
-| `trip/spiders/async_trip_spider.py`     | 126           | 63         | 50%          | 31-49, 53-54, 65-81, 87-115, 141-142, 152-154, 181, 209-214, 220-229, 238-239 |
-| **TOTAL**                               | **217**       | **85**     | **61%**      | -                                         |
-  
-```
   
  ## Dependencies
   All dependencies are listed in requirements.txt. Install them using:
 
     pip install -r requirements.txt
 
-  Main dependencies:
-  scrapy
-  sqlalchemy
-  psycopg2
-  pytest
-  pytest-cov
-  
- ### Remember:
-    Ensure PostgreSQL is running and properly configured.
-    Install all dependencies in a virtual environment.
-    Run tests and validate the code coverage before submission.
+
