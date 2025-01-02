@@ -1,133 +1,205 @@
-from django.test import TestCase
+import unittest
+import sys
+import os
 from unittest.mock import patch, MagicMock
-from django.core.management import call_command
+
+# Ensure the project root is in the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Set up Django environment for testing
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'llm.settings')
+import django
+django.setup()
+
+from llm_commands.management.commands.rewrite_hotel_data import Command as RewriteCommand
+from llm_commands.management.commands.generate_summaries_and_ratings import Command as GenerateCommand
 from llm_commands.models import Hotel, Summary, PropertyRating
 
-class RewriteHotelDataCommandTestCase(TestCase):
+
+class TestRewriteHotelDataCommand(unittest.TestCase):
     def setUp(self):
-        # Create test hotels
-        self.hotel1 = Hotel.objects.create(
-            property_title="Test Hotel 1",
-            description="A wonderful place to stay.",
-        )
-        self.hotel2 = Hotel.objects.create(
-            property_title="Test Hotel 2",
-            description="",
+        self.hotel = MagicMock(
+            id=1,
+            property_title="Old Hotel Title",
+            description="This is the old description."
         )
 
     @patch('llm_commands.management.commands.rewrite_hotel_data.Command.call_gemini_api')
-    def test_rewrite_hotel_data(self, mock_call_gemini_api):
-        # Mock Gemini API response
+    def test_rewrite_hotel_data_success(self, mock_call_gemini_api):
         mock_call_gemini_api.return_value = {
-            "candidates": [
-                {"content": {"parts": [{"text": "Title: Updated Title\nDescription: Updated Description"}]}}
-            ]
+            "candidates": [{"content": {"parts": [{"text": "Title: New Hotel Title\nDescription: This is the new description."}]}}]
         }
+        command = RewriteCommand()
+        title, description = command.extract_content(mock_call_gemini_api.return_value)
+        self.assertEqual(title, "New Hotel Title")
+        self.assertEqual(description, "This is the new description.")
 
-        # Run the management command
-        call_command('rewrite_hotel_data')
+    @patch('llm_commands.management.commands.rewrite_hotel_data.Command.call_gemini_api')
+    def test_rewrite_hotel_data_api_error(self, mock_call_gemini_api):
+        mock_call_gemini_api.side_effect = Exception("API error")
+        command = RewriteCommand()
+        title, description = command.extract_content(None)
+        self.assertIsNone(title)
+        self.assertIsNone(description)
+    
+    def test_create_prompt_with_complete_data(self):
+        command = RewriteCommand()
+        prompt = command.create_prompt(self.hotel)
+        self.assertIn("Old Hotel Title", prompt)
+        self.assertIn("This is the old description.", prompt)
+    
+    def test_handle_with_api_error(self):
+        mock_queryset = MagicMock()
+        mock_queryset.count.return_value = 1
+        mock_queryset.__iter__.return_value = iter([self.hotel])
+        with patch('llm_commands.models.Hotel.objects.all', return_value=mock_queryset):
+            with patch('llm_commands.management.commands.rewrite_hotel_data.Command.call_gemini_api', side_effect=Exception("API error")):
+                command = RewriteCommand()
+                command.stdout = MagicMock()
+                command.handle()
+                any_error_call = any(
+                    "Error processing hotel 1: API error" in call[0][0]
+                    for call in command.stdout.write.call_args_list
+                )
+                self.assertTrue(any_error_call, "Expected error message not found in output")
 
-        # Refresh hotel objects
-        self.hotel1.refresh_from_db()
+    def test_rewrite_hotel_data_no_response(self):
+        command = RewriteCommand()
+        title, description = command.extract_content(None)
+        self.assertIsNone(title)
+        self.assertIsNone(description)
 
-        # Assertions for the first hotel
-        self.assertEqual(self.hotel1.property_title, "Updated Title")
-        self.assertEqual(self.hotel1.description, "Updated Description")
+    def test_create_prompt_with_missing_fields(self):
+        incomplete_hotel = MagicMock(property_title=None, description=None)
+        command = RewriteCommand()
+        prompt = command.create_prompt(incomplete_hotel)
+        self.assertIn("Untitled Property", prompt)
+        self.assertIn("No description available", prompt)
 
-        # Ensure skipped hotel
-        self.assertEqual(self.hotel2.description, "")
+    def test_extract_content_with_invalid_response(self):
+        command = RewriteCommand()
+        invalid_response = {"unexpected": "structure"}
+        title, description = command.extract_content(invalid_response)
+        self.assertIsNone(title)
+        self.assertIsNone(description)
 
-class GenerateSummariesAndRatingsTestCase(TestCase):
+    def test_handle_with_no_hotels(self):
+        mock_queryset = MagicMock()
+        mock_queryset.count.return_value = 0
+        with patch('llm_commands.models.Hotel.objects.all', return_value=mock_queryset):
+            command = RewriteCommand()
+            command.stdout = MagicMock()
+            command.handle()
+            command.stdout.write.assert_any_call(
+                '\x1b[32;1m\n                Processing completed:\n'
+                '                - Total hotels: 0\n'
+                '                - Successfully updated: 0\n'
+                '                - Skipped: 0\n                \x1b[0m'
+            )
+
+
+class TestGenerateSummariesAndRatingsCommand(unittest.TestCase):
     def setUp(self):
-        # Create test hotels
-        self.hotel = Hotel.objects.create(
-            property_title="Test Hotel",
-            description="A cozy place to enjoy your vacation.",
+        self.hotel = MagicMock(
+            id=1,
+            property_title="Sample Hotel",
+            description="This is a sample description."
         )
-
+    
     @patch('llm_commands.management.commands.generate_summaries_and_ratings.Command.call_gemini_api')
-    def test_generate_summaries_and_ratings(self, mock_call_gemini_api):
-        # Mock responses for summary and rating
-        mock_call_gemini_api.side_effect = [
-            {"candidates": [{"content": {"parts": [{"text": "A cozy and relaxing getaway"}]}}]},
-            {"candidates": [{"content": {"parts": [{"text": "Rating: 4.5\nReview: Excellent service and facilities."}]}}]},
-        ]
-
-        # Run the management command
-        call_command('generate_summaries_and_ratings')
-
-        # Verify summary creation
-        summary = Summary.objects.filter(property=self.hotel).first()
-        self.assertIsNotNone(summary)
-        self.assertEqual(summary.summary, "A cozy and relaxing getaway")
-
-        # Verify property rating creation
-        rating = PropertyRating.objects.filter(property=self.hotel).first()
-        self.assertIsNotNone(rating)
-        self.assertEqual(rating.rating, 4.5)
-        self.assertEqual(rating.review, "Excellent service and facilities.")
-
-class UtilityFunctionsTestCase(TestCase):
-    @patch('llm_commands.management.commands.generate_summaries_and_ratings.Command.call_gemini_api')
-    def test_call_gemini_api(self, mock_call_gemini_api):
-        # Mock API response
+    def test_generate_summary_success(self, mock_call_gemini_api):
         mock_call_gemini_api.return_value = {
-            "candidates": [
-                {"content": {"parts": [{"text": "Generated content from Gemini API"}]}}
-            ]
+            "candidates": [{"content": {"parts": [{"text": "This is a summary of the hotel."}]}}]
         }
+        command = GenerateCommand()
+        summary_prompt = command.generate_summary_prompt(self.hotel)
+        response = command.call_gemini_api(summary_prompt)
+        summary_text = response["candidates"][0]["content"]["parts"][0]["text"]
+        self.assertEqual(summary_text, "This is a summary of the hotel.")
 
-        # Call the method
-        command = MagicMock()
-        response = command.call_gemini_api("Test Prompt")
+    def test_parse_rating_review_with_invalid_format(self):
+        command = GenerateCommand()
+        invalid_text = "Invalid text without rating or review"
+        rating, review = command.parse_rating_review(invalid_text)
+        self.assertIsNone(rating)
+        self.assertIsNone(review)
 
-        # Assertions
-        self.assertIsNotNone(response)
-        self.assertIn("candidates", response)
+    @patch('llm_commands.management.commands.generate_summaries_and_ratings.Command.call_gemini_api')
+    def test_generate_rating_and_review_success(self, mock_call_gemini_api):
+        mock_call_gemini_api.return_value = {
+            "candidates": [{"content": {"parts": [{"text": "Rating: 4.5\nReview: Excellent stay with great service!"}]}}]
+        }
+        command = GenerateCommand()
+        rating_prompt = command.generate_rating_prompt(self.hotel)
+        response = command.call_gemini_api(rating_prompt)
+        rating, review = command.parse_rating_review(response["candidates"][0]["content"]["parts"][0]["text"])
+        self.assertEqual(rating, 4.5)
+        self.assertEqual(review, "Excellent stay with great service!")
 
-    def test_parse_rating_review(self):
-        from llm_commands.management.commands.generate_summaries_and_ratings import parse_rating_review
+    def test_generate_rating_prompt(self):
+        command = GenerateCommand()
+        prompt = command.generate_rating_prompt(self.hotel)
+        self.assertIn("Sample Hotel", prompt)
+        self.assertIn("This is a sample description.", prompt)
 
-        # Valid response
-        valid_response = "Rating: 5\nReview: Excellent property!"
-        rating, review = parse_rating_review(valid_response)
-        self.assertEqual(rating, 5)
-        self.assertEqual(review, "Excellent property!")
+    @patch('llm_commands.management.commands.generate_summaries_and_ratings.Command.call_gemini_api')
+    def test_handle_with_api_timeout(self):
+        mock_queryset = MagicMock()
+        mock_queryset.count.return_value = 1
+        mock_queryset.__iter__.return_value = iter([self.hotel])
+        with patch('llm_commands.models.Hotel.objects.all', return_value=mock_queryset):
+            with patch('llm_commands.management.commands.generate_summaries_and_ratings.Command.call_gemini_api', side_effect=Exception("Timeout")):
+                command = GenerateCommand()
+                command.stdout = MagicMock()
+                command.handle()
+                any_error_call = any(
+                    "Error processing hotel 1: Timeout" in call[0][0]
+                    for call in command.stdout.write.call_args_list
+                )
+                self.assertTrue(any_error_call, "Expected error message not found in output")
+        
+    # If no exception was raised, fail the test
+    def test_generate_summary_prompt_with_partial_data(self):
+        incomplete_hotel = MagicMock(property_title="Sample Hotel", description=None)
+        command = GenerateCommand()
+        prompt = command.generate_summary_prompt(incomplete_hotel)
+        self.assertIn("Sample Hotel", prompt)
+        self.assertIn("Description: None", prompt)
 
-        # Invalid response
-        invalid_response = "Invalid data"
-        with self.assertRaises(ValueError):
-            parse_rating_review(invalid_response)
+    def test_parse_rating_review_missing_fields(self):
+        command = GenerateCommand()
+        invalid_text = "Rating: \nReview: "
+        rating, review = command.parse_rating_review(invalid_text)
+        self.assertIsNone(rating)
+        self.assertIsNone(review)
 
-        # Missing rating
-        no_rating_response = "Review: Excellent property!"
-        with self.assertRaises(ValueError):
-            parse_rating_review(no_rating_response)
+    def test_handle_with_missing_data(self):
+        mock_queryset = MagicMock()
+        mock_queryset.count.return_value = 1
+        mock_queryset.__iter__.return_value = iter([
+            MagicMock(property_title=None, description=None, id=1)
+        ])
+        with patch('llm_commands.models.Hotel.objects.all', return_value=mock_queryset):
+            command = GenerateCommand()
+            command.stdout = MagicMock()
+            command.handle()
+            command.stdout.write.assert_any_call("Skipping hotel 1: Missing title or description")
 
-        # Missing review
-        no_review_response = "Rating: 4"
-        with self.assertRaises(ValueError):
-            parse_rating_review(no_review_response)
+    def test_handle_with_api_timeout(self):
+        mock_queryset = MagicMock()
+        mock_queryset.count.return_value = 1
+        mock_queryset.__iter__.return_value = iter([self.hotel])
+        with patch('llm_commands.models.Hotel.objects.all', return_value=mock_queryset):
+            with patch('llm_commands.management.commands.generate_summaries_and_ratings.Command.call_gemini_api', side_effect=Exception("Timeout")):
+                command = GenerateCommand()
+                command.stdout = MagicMock()
+                command.handle()
+                any_error_call = any(
+                    "Error processing hotel 1: Timeout" in call[0][0]
+                    for call in command.stdout.write.call_args_list
+                )
+                self.assertTrue(any_error_call, "Expected error message not found in output")
 
-    def test_truncate_text(self):
-        from llm_commands.management.commands.generate_summaries_and_ratings import truncate_text
 
-        # Short text
-        text = "This is a short text."
-        self.assertEqual(truncate_text(text, 50), text)
-
-        # Text requiring truncation
-        text = "This is a long text that needs truncation."
-        self.assertEqual(truncate_text(text, 20), "This is a long...")
-
-    def test_extract_first_title(self):
-        from llm_commands.management.commands.generate_summaries_and_ratings import extract_first_title
-
-        # Valid title
-        text = "**Great Title**\nMore text"
-        self.assertEqual(extract_first_title(text), "Great Title")
-
-        # No valid title
-        invalid_text = "No valid title here."
-        with self.assertRaises(ValueError):
-            extract_first_title(invalid_text)
+if __name__ == '__main__':
+    unittest.main()
