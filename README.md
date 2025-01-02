@@ -1,5 +1,4 @@
-//AIzaSyCaTquxyGLe7KxvQZX1POUFmNYPEteLnwc api key
-# Assignment08
+# Assignment10
 
 
 ## Table of Contents
@@ -26,11 +25,11 @@ To clone this project to your local machine, follow these steps:
 
 2. **Clone the repository**:
    
-         git clone https://github.com/M-E-U-E/Assignment_8.git or git clone git@github.com:M-E-U-E/Assignment_8.git
+   ```git clone https://github.com/M-E-U-E/Assignment_10.git or git clone git@github.com:M-E-U-E/Assignment_10.git```
    
     Go to the Directory:
     ```bash
-    cd Assignment_8
+    cd Assignment_10
     ```
 4. **Set Up Virtual Environment**
    
@@ -43,8 +42,10 @@ To clone this project to your local machine, follow these steps:
     # Create virtual environment On Windows:
        python -m venv env
        venv\Scripts\activate
-
-    
+    ```
+    Create a .env file and add this:
+    ```
+    GEMINI_API_KEY=AIzaSyCevagytgYUSdjbfQ7koD05dcS4B2IWJYE
     ```
     Install Dependencies
     ```bash
