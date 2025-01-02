@@ -62,6 +62,12 @@ To clone this project to your local machine, follow these steps:
     docker-compose exec -it django_app python manage.py makemigrations
     docker-compose exec -it django_app python manage.py migrate
     ```
+    if having any issue
+    drop the hotel table using this commands then again Compose the Docker:
+    ```
+    docker exec -it postgres_db psql -U username -d hotel_db
+    DROP TABLE hotels;
+    ```
     **To see the django application and django admin:**
     ```
     create superuser: docker-compose exec -it django_app python manage.py createsuperuser
@@ -130,37 +136,45 @@ python manage.py generate_summaries_and_ratings
 
 ## Project Structure
 ```
-Assignment_8/
-│
-├── city_data/                      # Directory for city-related data
-├── htmlcov/                        # Code coverage reports
-├── tests/                          # Unit tests
+Assignment_10/
+├── llm/
+│   ├── llm/
+│   │   ├── pycache/
+│   │   ├── __init__.py
+│   │   ├── asgi.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── llm_commands/
+│   │   ├── management/
+│   │   │   └── commands/
+│   │   │       ├── __init__.py
+│   │   │       ├── generate_summaries_and_ratings.py
+│   │   │       ├── rewrite_hotel_data.py
+│   │   │       └── run_scrapy.py
+│   │   └── __init__.py
+│   ├── migrations/
 │   ├── __init__.py
-│   └── test_async_trip_spider.py   # Test for the async Trip Spider
-│
-├── trip/                           # Main project directory
-│   ├── db/                         # Database setup
-│   │   ├── __init__.py
-│   │   ├── database.py             # Database connection setup
-│   │   └── models.py               # SQLAlchemy models
-│   │
-│   ├── spiders/                    # Scrapy spiders
-│   │   ├── __init__.py
-│   │   └── async_trip_spider.py    # Spider for scraping trip.com
-│   │
-│   ├── items.py                    # Scrapy items
-│   ├── middlewares.py              # Scrapy middlewares
-│   ├── pipelines.py                # Scrapy pipelines
-│   └── settings.py                 # Scrapy settings
-│
-├── venv/                           # Virtual environment
-├── .coverage                       # Coverage data
-├── .gitignore                      # Ignored files
-├── docker-compose.yml              # Docker setup (if applicable)
-├── dockerfile                      # Dockerfile for containerization
-├── README.md                       # Project guidelines
-├── requirements.txt                # Project dependencies
-└── scrapy.cfg                      # Scrapy configuration
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── generate_summaries_and_ratings.log
+├── manage.py
+├── rewrite_hotel.log
+└── scraper/
+    ├── city_data/
+    │   ├── images_of_hotels/
+    │   └── json_of_hotels/
+    ├── trip/
+    │   ├── __pycache__/
+    │   ├── db/
+    │   └── spiders/
+    │       ├── __pycache__/
+    │       ├── __init__.py
+    │       └── async_trip_spider.py
+    └── __init__.py
 
 ```
 ## Technologies Used
