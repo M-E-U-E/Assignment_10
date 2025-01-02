@@ -75,7 +75,7 @@ To clone this project to your local machine, follow these steps:
     ```
 ## Database Management
     Access the database:
-
+    Using Django Admin: 
     ```
     docker exec -it postgres_db psql -U username -d hotel_db
     ```
@@ -91,7 +91,23 @@ To clone this project to your local machine, follow these steps:
     SELECT * FROM llm_commands_summary;
     \q for exit
    ```
-
+   Using PgAdmin:
+   ```
+   Go to http://localhost:5050/
+   Enter these credentials and press the Login button:
+   Email Address / Username: admin@admin.com
+   Password: admin
+   Right click on Servers and then Register > Server
+   In General tab, enter Name: LLM
+   In Connection tab, enter these details and click Save
+   Host name/address: postgres_db
+   Username: user
+   Password: password
+   Then go to Servers > LLM > Databases > hotels_db > Schemas > public > Tables
+   To view the AI generated names and description of hotels, right click on the new_hotels table and click on View/Edit Data > All Rows
+   To view the AI generated summary of hotels, right click on the hotel_summaries table and click on View/Edit Data > All Rows
+   To view the AI generated ratings and reviews of hotels, right click on the hotel_ratings_reviews table and click on View/Edit Data > All Rows
+   ```
    
 
 
