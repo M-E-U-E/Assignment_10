@@ -191,6 +191,12 @@ Assignment_10/
     │       ├── __init__.py
     │       └── async_trip_spider.py
     └── __init__.py
+├── .gitignore             # Gitignore file
+├── Dockerfile             # Docker build configuration
+├── docker-compose.yml     # Docker Compose setup
+├── requirements.txt       # Python dependencies
+├── manage.py              # Django management script
+└── README.md              # Project documentation
 
 ```
 ## Technologies Used
