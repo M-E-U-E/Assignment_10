@@ -14,8 +14,7 @@
 
 
 ## Description
-
-This project scrapes hotel property data from trip.com and stores the collected data into a PostgreSQL database. The application utilizes Scrapy to gather details such as property title, rating, location, latitude, longitude, room type, price, and images. The scraped images are saved in a local directory, and their paths are stored in the database for retrieval.
+This project aims to develop a Django CLI application that enhances property data by leveraging the GEmini API and language models. It will automate rewriting property titles and descriptions, generate comprehensive summaries, and create ratings and reviews. The application integrates Ollama's model for processing, rewrites data using the GEmini API, and stores the updated information in a property table. Additionally, it generates property summaries and insights, storing them in separate tables, providing enriched data for improved property analysis and management.
 
 ## Git Clone Instructions
 
@@ -90,6 +89,10 @@ To clone this project to your local machine, follow these steps:
 
 ## Django CLI Commands
 **Rewrite Hotel Title and Add a Description for the hotel:**
+Go to the Bash using this command:
+```
+docker exec -it django_app bash
+```
 ```
 python manage.py rewrite_hotel_data
 ```
