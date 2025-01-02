@@ -127,26 +127,15 @@ python manage.py generate_summaries_and_ratings
 
 ## Test
   Run the testing file:
-  Ensure the coverage is install:
-   ```
-   pip install coverage
-   ```
-   Check the version:
-   ```
-   coverage --version
-   ```
+  ```
+   docker exec -it django_app python manage.py test
+  ```
+ Get the Coverage:
+  ```
+   docker exec -it django_app coverage run manage.py test
+   docker exec -it django_app coverage report
 
-   ```
-   coverage run --source=trip -m unittest discover -s tests
-   ```
-  See report in terminal:
-   ```
-   coverage report -m
-   ```
-  Run the testing html:
-   ```
-   coverage html
-   ```
+  ```
  
     
 
